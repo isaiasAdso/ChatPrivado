@@ -64,4 +64,5 @@ const StyledTabPanel = styled(TabPanel)`
   margin: 0;
   background-color: #ffffff;
   height: calc(100% - 48px); // Ajuste para el tamaño del TabList
+  overflow-y: auto;
 `;
