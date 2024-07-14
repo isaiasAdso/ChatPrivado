@@ -6,7 +6,7 @@ import { Navigate, useLocation } from "react-router-dom";
 const CookieContext = createContext();
 
 export const CookieProvider = ({ children }) => {
-  const [ValorCookie, setValorCookie] = useState();
+  const [ValorCookie, setValorCookie] = useState((Cookies.get('valor') || null));
   const navigate = useNavigate();
   const location = useLocation();
   const [redireccionar, setRedireccionar] = useState(null);
